@@ -42,7 +42,7 @@ Just compiles the primary binary. Mostly an auxilary switch to be used for small
 Just compiles the secondary binary. Maybe useful if you haven't changed the primary binary
 ### one
 Removes the secondary binary and compiles the main binary. This could be useful if you launch lemonbar with a script that detects binaries inside the lemonbar folder.
-## clean
+### clean
 Removes both binaries.
 
 ## Usage
