@@ -1,4 +1,4 @@
-#LemonBro
+# LemonBro
 ## A suckless-inspired bar utility
 
 ## Overview ##
