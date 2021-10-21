@@ -9,7 +9,7 @@ LemonBro is a piper program for lemonbar. What this means is that without [`lemo
 Honestly, this is just a project I whipped up for fun thinking that it would prove helpful for people wanting to take a more UNIXy or suckless approach to doing theirbars while still being to setup and not being overly specific. If you are interested in the suckless approach (modifying source code as config), you can [click here](https://suckless.org) to view their website. I am not affiliated with them in anyway.
 
 ## Configuration
-Modifying this program to fit your needs is a fairly straightforward process and only requires your favorite text editor and a C compiler (tested with GNU make). In order to do so, you have to modify the source code and recompile. However, for simplicities sake, most the of the configuration needed is done in the appropriate `config.h` file.
+Modifying this program to fit your needs is a fairly straightforward process and only requires your favorite text editor and a C compiler (tested with GNU make and gcc). In order to do so, you have to modify the source code and recompile. However, for simplicities sake, most the of the configuration needed is done in the appropriate `config.h` file.
 <br/>
 The first thing to be aware of is the script variables present in the following image:
 <img align='center' alt="variables with hardcoded paths to user's home" src='images/script_variables.png'/><br/>
