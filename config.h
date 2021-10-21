@@ -45,17 +45,16 @@ typedef struct module {
 
 /* MODIFY THIS TO ADD MODULES. MAKE SURE TO INCREMENT NUM_MODS */
 struct module modules[NUM_MODS] = {
-		  /*  COMMAND                       ALIGN    ORDER  P
-		   *  	   *  RE     POST    TIMER	SIGNAL   */
-		    { LEMON"/lemon-power.sh",      RIGHT,   5,     "",     "",     -1,	1  },
-		    { LEMON"/lemon-battery.sh",     CENTER,  1,     "",     "",     30,	2    },
-		    { LEMON"/lemon-time.sh",        RIGHT,   4,     "",     "",     30,	3    },
-		    { LEMON"/lemon-brightness.sh",  RIGHT,   3,     "",     "",     10,	4    },
-		    { LEMON"/lemon-ewmh.sh",        LEFT,    3,     "",     "",     -1,	7    },
-		    { LEMON"/lemon-layout.sh",	LEFT,	2,	"",	"",	-1,	11 },
-		    { LEMON"/lemon-edge.sh "LEMON"/lemon-launcher.sh",	    LEFT,      1,	    "",	    "",	    -1,	8    },
-		    { LEMON"/lemon-kernel.sh",	RIGHT,	1,	"",	"",	-1,	9 },
-		    { LEMON"/lemon-connected.sh",	RIGHT,	2,	"",	"",	-1,	10 },
+/*  COMMAND                       ALIGN    ORDER  PRE     POST    TIMER	SIGNAL   */
+  { LEMON"/lemon-power.sh",      RIGHT,   5,     "",     "",     -1,	1  },
+  { LEMON"/lemon-battery.sh",     CENTER,  1,     "",     "",     30,	2    },
+  { LEMON"/lemon-time.sh",        RIGHT,   4,     "",     "",     30,	3    },
+  { LEMON"/lemon-brightness.sh",  RIGHT,   3,     "",     "",     10,	4    },
+  { LEMON"/lemon-ewmh.sh",        LEFT,    3,     "",     "",     -1,	7    },
+  { LEMON"/lemon-layout.sh",	LEFT,	2,	"",	"",	-1,	11 },
+  { LEMON"/lemon-edge.sh "LEMON"/lemon-launcher.sh",	    LEFT,      1,	    "",	    "",	    -1,	8    },
+  { LEMON"/lemon-kernel.sh",	RIGHT,	1,	"",	"",	-1,	9 },
+  { LEMON"/lemon-connected.sh",	RIGHT,	2,	"",	"",	-1,	10 },
 };
 
 /* Method Declaration - ignore me*/
