@@ -1,14 +1,13 @@
 all:
-	gcc lemon.bro.c -o lemonmainc -DMAIN
-	gcc lemon.bro.c -o lemonsecondaryc -DSECONDARY
-	rm -rf ./mainonly
+	gcc lemon.bro.c -o lemonbro -DMAIN
+	gcc lemon.bro.c -o lemonbro2 -DSECONDARY
 main:
-	gcc lemon.bro.c -o lemonmainc -DMAIN
-	rm -rf ./mainonly
+	gcc lemon.bro.c -o lemonbro -DMAIN
 secondary:
-	gcc lemon.bro.c -o lemonsecondaryc -DSECONDARY
-	rm -rf ./mainonly
+	gcc lemon.bro.c -o lemonbro2 -DSECONDARY
 one:
-	gcc lemon.bro.c -o lemonmainc  -DONE
-	touch ./mainonly
-	rm -rf ./lemonsecondaryc
+	gcc lemon.bro.c -o lemonbro  -DONE
+	rm ./lemonbro2
+clean:
+	rm ./lemonbro
+	rm ./lemonbro2

@@ -8,7 +8,7 @@ LemonBro is a piper program for lemonbar. What this means is that without [`lemo
 # Purpose
 Honestly, this is just a project I whipped up for fun thinking that it would prove helpful for people wanting to take a more UNIXy or suckless approach to doing theirbars while still being to setup and not being overly specific. If you are interested in the suckless approach (modifying source code as config), you can [click here](https://suckless.org) to view their website. I am not affiliated with them in anyway.
 
-## Usage
+## Configuration
 Modifying this program to fit your needs is a fairly straightforward process and only requires your favorite text editor and a C compiler (tested with GNU make). In order to do so, you have to modify the source code and recompile. However, for simplicities sake, most the of the configuration needed is done in the appropriate `config.h` file.
 <br/>
 The first thing to be aware of is the script variables present in the following image:
@@ -26,6 +26,28 @@ After adding these modules to the array, you have to modify the number of module
 <img align='center' alt="Variable representing the number of modules" src='images/num_mods.png'/><br/>
 Finally, to start up the program you do the following shell commands: `./lemonbro | lemonbar` and/or `./lemonbrosecondary | lemonbar` depending on the whether it is a single bar or you are using both bars. 
 
+## Compiling
+The program comes with a make file for use with GNU make utility. The following options are supported:
+
+- [`all`](#all)
+- [`main`](#main)
+- [`secondary`](#secondary)
+- [`one`](#one)
+- [`clean`](#clean)
+### all
+Using all compiles both the main binary and secondary binaries. This allows running both binaries, say for a bar on the top and bottom of the screen.
+### main
+Just compiles the primary binary. Mostly an auxilary switch to be used for small performance improvements.
+### secondary
+Just compiles the secondary binary. Maybe useful if you haven't changed the primary binary
+### one
+Removes the secondary binary and compiles the main binary. This could be useful if you launch lemonbar with a script that detects binaries inside the lemonbar folder.
+## clean
+Removes both binaries.
+
+## Usage
+Running the program is as simple as doing `./lemonbro | lemonbar`. Although, you should probably configure lemonbar, also. Doing this depends on your specific fork, but generally it will be in the form `lemonbar -option value`.<br/>
+You will likely want to put this command into a shell script and run it on startup.
 
 ## Modules
 
