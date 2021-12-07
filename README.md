@@ -2,6 +2,7 @@
 ## A suckless-inspired bar utility
 
 ## Overview ##
+<img align='center' alt='example bar' src='images/example_bar.png'><br/>
 
 LemonBro is a piper program for lemonbar. What this means is that without [`lemonbar`](https://github.com/LemonBoy/bar) or one of its forks, this program just prints to stdout. To use the program, see [usage](#usage). By making this piping process into a C program rather than a shell script, it makes it easier to make efficient, minimalist bars that don't reinvent the wheel or use unnessecary compute cycle finding the current user every second.
 
